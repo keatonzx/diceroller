@@ -9,16 +9,16 @@
 </head>
   <p span id = "sides" ></p>
   <p span id = "numberdice" ></p>
-
   <body>
     <body onload="rolldice(numberdice,sides)"></body>
-
-
 </head>
 
 <body>
 
-  <p>Click the buttons to roll some dice</p>
+  <p>Click the button to roll some dice</p>
+
+  <button onclick="dicearr(),myCreateFunction(), rolldice(numberdice,sides)">Roll dice </button>
+  <button onclick="myDeleteFunction()">Delete row</button>
 
   <table id="myTable">
     <tr>
@@ -30,8 +30,7 @@
   </table>
 <br>
 
-<button onclick="dicearr(),myCreateFunction(), rolldice(numberdice,sides)">Roll dice </button>
-<button onclick="myDeleteFunction()">Delete row</button>
+
 
 
 </body>

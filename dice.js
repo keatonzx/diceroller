@@ -1,10 +1,9 @@
 var sides = 6;
-var numberdice = 5;
+var numberdice = 2;
 var dicerolled = [numberdice];
 
 document.getElementById('sides').innerHTML = sides;
 document.getElementById('numberdice').innerHTML = numberdice;
-
 
 function dicearr(){
   for (var i = 0; i < numberdice; i++){
