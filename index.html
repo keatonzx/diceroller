@@ -3,20 +3,37 @@
 <html lang="en">
 <head>
   <meta charset="utf-8">
- <script src="dice.js"></script>
+  <script src="dice.js"></script>
   <title>Keaton Armstrong</title>
 
 </head>
-<p span id = "sides" ></p>
-<p span id = "numberdice" ></p>
+  <p span id = "sides" ></p>
+  <p span id = "numberdice" ></p>
+
+  <body>
+    <body onload="rolldice(numberdice,sides)"></body>
+
+
+</head>
 
 <body>
-<body onload="rolldice(numberdice,sides)">
 
-<h1><span id="mydice"></span></h1>
-<h1><span id="total"></span></h1>
+  <p>Click the buttons to roll some dice</p>
 
-<button onclick ="window.location.reload()">Roll some dice!</button>
+  <table id="myTable">
+    <tr>
+      <td>Dice</td>
+      <td>Dice</td>
+      <td>Total</td>
+    </tr>
+
+  </table>
+<br>
+
+<button onclick="dicearr(),myCreateFunction(), rolldice(numberdice,sides)">Roll dice </button>
+<button onclick="myDeleteFunction()">Delete row</button>
+
+
 </body>
 
 </html>
